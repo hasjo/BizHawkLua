@@ -3,7 +3,7 @@ MINIMUM_SECONDS = 5
 -- This is the maximum seconds before a save or a load
 MAXIMUM_SECONDS = 30
 -- Set this to true for different run start locations
-VARIED = false
+VARIED = true
 
 function checkpress (button, joytable, pressed)
 	if joytable[button] == true then
@@ -102,6 +102,7 @@ while true do
 				run_frames = 0
 				print("STARTING, NEXT ACTION "..next_frame_action)
 				current_save = 1
+				lact = false
 			end
 		else
 			savestate.save("startspot")
