@@ -3,7 +3,7 @@ MINIMUM_SECONDS = 5
 -- This is the maximum seconds before a save or a load
 MAXIMUM_SECONDS = 30
 -- Set this to true for different run start locations
-VARIED = true
+VARIED = false
 
 function checkpress (button, joytable, pressed)
 	if joytable[button] == true then
@@ -47,17 +47,14 @@ rightpress = false
 rightact = false
 
 state = "start"
-frame_count = 0
 run_frames = 0
 run_count = 1
-array_count = 1
 run_array = {}
 current_save = 0
 remaining_runs = 1
 
 while true do
 	joytable = joypad.get()
-	frame_count = frame_count + 1
 	run_frames = run_frames + 1
 	
 	lact, lpress = checkpress("P1 L", joytable, lpress)
@@ -121,7 +118,7 @@ while true do
 	
 	if state == "running" then
 		if run_frames >= next_frame_action and remaining_runs > 1 then
-			tarsave, remaining = random_save(current_save, run_array, run_count)
+			tarsave = random_save(current_save, run_array, run_count)
 			savestate.saveslot(current_save)
 			savestate.loadslot(tarsave)
 			current_save = tarsave
