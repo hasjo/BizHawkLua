@@ -32,5 +32,7 @@ Good Job!
 ## VIDEOS
 
 Introduction Video - 
+https://youtu.be/5VMDuee7iAQ
 
 Code Review Video -
+https://youtu.be/aEa-D14fCZI
