@@ -13,3 +13,11 @@ Download obnoxious.lua from this directory and load it into your emulator by goi
 ## Running the script
 The script will start when you press the L button on your controller and you will see "RUNNING" in the bottom left.
 To pause running you press L again and it will tell you that it's "NOT RUNNING"
+
+## VIDEOS
+
+Introduction Video - 
+https://youtu.be/TYzyXE6jhiE
+
+Code Review Video -
+https://youtu.be/3iMIZL_8Uiw
