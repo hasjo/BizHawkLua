@@ -16,5 +16,5 @@
 ## CHANGING ROUTES
 Check the dir for the alternate routes for instructions
 
-## REFRENCE VIDEOS
+## REFERENCE VIDEOS
 - Overview: https://youtu.be/-kuQGIOVIzw
